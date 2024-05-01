@@ -427,7 +427,7 @@ void lv_table_set_selected_cell(lv_obj_t * obj, uint16_t row, uint16_t col)
 
         scroll_to_selected_cell(obj);
 
-        lv_obj_send_event(obj, LV_EVENT_VALUE_CHANGED, NULL);
+        lv_event_send(obj, LV_EVENT_VALUE_CHANGED, NULL);
     }
 }
 
