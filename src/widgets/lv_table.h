@@ -197,6 +197,14 @@ bool lv_table_has_cell_ctrl(lv_obj_t * obj, uint16_t row, uint16_t col, lv_table
  */
 void lv_table_get_selected_cell(lv_obj_t * obj, uint16_t * row, uint16_t * col);
 
+/**
+ * Set the selected cell
+ * @param obj       pointer to a table object
+ * @param row       id of the cell row to select
+ * @param col       id of the cell column to select
+ */
+void lv_table_set_selected_cell(lv_obj_t * obj, uint16_t row, uint16_t col);
+
 /**********************
  *      MACROS
  **********************/
